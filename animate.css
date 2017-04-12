@@ -8,6 +8,12 @@
  * Copyright (c) 2016 Daniel Eden
  */
 
+.onclick_pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
