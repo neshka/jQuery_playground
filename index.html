@@ -31,7 +31,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>
   $('img').on('click', function(event){
-  		$('.container-fluid').append('<div class="bigger_pic"><img src="' + event.target.src + '" alt="smt" class="onclick_pic"><button type="button">X</button></div>');
+  		$('.container-fluid').append('<div class="bigger_pic col-md-8 col-md-offset-2"><img src="' + event.target.src + '" alt="smt" class="onclick_pic"><button type="button">X</button></div>');
   		$('button').on('click', function(){
   			$(this).parent().remove();
   		});
