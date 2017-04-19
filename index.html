@@ -17,13 +17,13 @@
 	
 	  <div class="row">
 	  	<div class="col-xs-4">
-	  		<img src="http://lorempixel.com/400/200/" alt="smt" class="picture_1">	 
+	  		<img src="image/heartbrain1.jpg"  alt="awkward yeti" class="picture_1">	 
 		</div>
   		<div class="col-xs-4">
-  			<img src="http://lorempixel.com/400/200/sports/Dummy-Text" alt="smt_else" class="picture_2">
+  			<img src="image/heartbrain2.jpg"  alt="awkward yeti" class="picture_2">
 		</div>
 		<div class="col-xs-4">
-			<img src="http://lorempixel.com/400/200/sports" alt="smt_else_again" class="picture_3">
+			<img src="image/heartbrain3.jpg"  alt="awkward yeti" class="picture_3">
 		</div>  
 	  </div>
 	</div>
@@ -32,6 +32,7 @@
   <script>
   $('img').on('click', function(event){
   		$('.container-fluid').append('<div class="bigger_pic col-md-8 col-md-offset-2"><img src="' + event.target.src + '" alt="smt" class="onclick_pic"><button type="button">X</button></div>');
+  		//$('body').css('opacity', '0.5'); another div absolut pos: 0, on click show
   		$('button').on('click', function(){
   			$(this).parent().remove();
   		});
